@@ -79,7 +79,7 @@ export function HoursPieChart({ data }: HoursPieChartProps) {
   };
 
   // Custom legend formatter to show name + hours
-  const renderLegend = (value: string, entry: { payload?: { displayValue?: string; fullName?: string } }) => {
+  const renderLegend = (value: any, entry: any) => {
     const hours = entry.payload?.displayValue || '';
     const fullName = entry.payload?.fullName || value;
     // Truncate long names
